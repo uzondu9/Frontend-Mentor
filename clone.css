@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Karla;
+}
+
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+html{
+    --LightGreen: hsl(148, 38%, 91%);
+    --Green: hsl(169, 82%, 27%);
+    --Red:hsl(0, 66%, 56%);
+    --White: hsl(0, 0%, 100%);
+    --MediumGrey: hsl(186, 15%, 59%);
+    --DarkGrey: hsl(187, 24%, 22%);
+}
+
+.aster{
+    color: var(--Green);
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url(assets/fonts/Karla-VariableFont_wght.ttf);
+}
+
+body{
+    background-color: hsl(148, 38%, 91%);
+    height: 100%;
+}
+
+.formCont{
+   background-color: var(--White);
+   width: 50%;
+   margin: 0% calc(50%/2);
+   margin-top: 0.5%;
+   padding: 1.5em 3em;
+   padding-bottom: 1em;
+   border-radius: 0.75em;
+}
+
+h1{
+     font-size: 1.5em;
+     position: relative;
+     right: 0.5em;
+     margin-bottom: 1.5rem;
+}
+
+.row, .innerRow1{
+    display: flex;
+}
+
+.row,.NameCont,input.name,.emailCont,.email, .queryBox,textarea,.submit{
+    width: 100%; 
+}
+
+.row3,.row4, .row5{display: block;}
+.row{margin-top: 1em; }
+.row5{margin-top: 1.5em; margin-bottom: 1.5em;}
+
+.NameCont+.NameCont, .queryBox+.queryBox{
+    margin-left: 1.5em;
+}
+
+label,p.queryType,p{
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.35em;
+}
+
+input.name, .email{
+    font-size: 1rem;
+}
+
+.name, .email, .queryBox, textarea, .submit{
+    padding: 0.85em 1.5em;
+    border: 1px outset hsl(186, 15%, 59%);
+    border-radius: 0.35em;
+    transition: 1.5s;
+}
+
+input.name:focus, .email:focus, textarea:focus{
+    outline: 1px outset hsl(169, 82%, 27%);
+    outline-width: 0.25px;
+}
+
+input.name:hover, .email:hover, textarea:hover{
+    outline: 1px outset hsl(169, 82%, 27%);
+    outline-width: 0.25px;
+}
+
+textarea{
+    font-size: 1.15rem;
+    resize: none;
+    height: 6.75em;
+    padding: 0.75em;
+    line-height: 1.25;
+}
+
+
+.shift{
+    margin-left: 1em;
+    font-weight: 500;
+}
+
+.checkbox, .queryInput{
+    scale: 1.2;
+    accent-color:hsl(169, 82%, 27%); 
+    cursor: pointer;
+}
+
+.submit{
+    background-color: hsl(169, 82%, 27%); 
+    color:  hsl(0, 0%, 100%);
+    transition: 0.75s;
+    cursor:-webkit-grab;
+}
+
+.submit:hover{
+    background-color: hsl(187, 24%, 22%);
+}
+
+.errorText{color: var(--Red); display: none; margin-top: 0.5em;}
+.errorText.outer{ margin-bottom: 2em;}
+.errorElement{border: 1px outset var(--Red)}
+
+#success{
+    width: 30%;
+    margin: auto 35%;
+    padding: 20px;
+    background-color: hsl(187, 24%, 22%);
+    display: none;
+    border-radius: 10px;
+}
+
+#success #textSuccess{
+    background-image: url(assets/images/icon-success-check.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+#success #successMessage{
+    font-weight: 200;
+}
+
+#successMessage,#textSuccess{
+   color:hsl(0, 0%, 100%);
+   font-size: 14px;
+}
+
