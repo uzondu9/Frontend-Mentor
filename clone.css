@@ -40,8 +40,7 @@ body{
 .formCont{
    background-color: var(--White);
    width: 50%;
-   margin: 0% calc(50%/2);
-   margin-top: 0.5%;
+   margin: 25% calc(50%/2);
    padding: 1.5em 3em;
    padding-bottom: 1em;
    border-radius: 0.75em;
