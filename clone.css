@@ -63,8 +63,8 @@ h1{
 }
 
 .row3,.row4, .row5{display: block;}
-.row{margin-top: 1em; }
-.row5{margin-top: 1.5em; margin-bottom: 1.5em;}
+.row{margin-top: 2em; }
+.row5{margin-top: 2.5em; margin-bottom: 2.5em;}
 
 .NameCont+.NameCont, .queryBox+.queryBox{
     margin-left: 1.5em;
